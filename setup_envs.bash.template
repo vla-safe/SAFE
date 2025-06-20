@@ -1,0 +1,6 @@
+# Set up the environment variables for this project
+
+export SAFE_OPENVLA_ROLLOUT_ROOT="/path/to/openvla/rollouts"
+export SAFE_OPENPI_ROLLOUT_ROOT="/path/to/openpi/rollouts"
+export SAFE_OPENPIZERO_ROLLOUT_ROOT="/path/to/open-pi-zero/rollouts"
+

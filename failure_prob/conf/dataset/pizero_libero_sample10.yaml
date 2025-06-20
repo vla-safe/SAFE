@@ -1,0 +1,5 @@
+defaults:
+  - base_pizero
+
+data_path_prefix: ""
+data_path: "pi0-libero_10-temp0.5-sample10"

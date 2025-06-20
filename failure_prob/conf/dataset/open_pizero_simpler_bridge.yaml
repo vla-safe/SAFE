@@ -1,0 +1,9 @@
+defaults:
+  - base_open_pizero
+  
+subset_name: "bridge"
+data_path_prefix: ""
+data_path: "pizero_v1/bridge_beta_step19296_2024-12-26_22-30_42"
+
+pred_horizon: 4
+exec_horizon: 4

@@ -1,0 +1,9 @@
+defaults:
+  - base_open_pizero
+  
+subset_name: "fractal"
+data_path_prefix: ""
+data_path: "pizero_v1/fractal_beta_step29576_2024-12-29_13-10_42"
+
+pred_horizon: 4
+exec_horizon: 2

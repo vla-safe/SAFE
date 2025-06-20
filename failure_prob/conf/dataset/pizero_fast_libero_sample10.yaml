@@ -1,0 +1,5 @@
+defaults:
+  - base_pizero_fast
+
+data_path_prefix: ""
+data_path: "pi0fast-libero_10-temp0.5-sample10"

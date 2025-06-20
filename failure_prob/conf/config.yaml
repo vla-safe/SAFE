@@ -1,0 +1,10 @@
+defaults:
+  - base_config
+  - dataset: openvla
+  - model: indep
+  # See composition order note
+  - _self_
+
+train:
+  exp_name: "${dataset.name}-${dataset.subset_name}-${model.name}-${train.exp_suffix}"
+  logs_save_path: "${train.logs_save_root}/${train.exp_name}/${now:%Y%m%d}/${now:%H%M%S}"

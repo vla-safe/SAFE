@@ -1,0 +1,6 @@
+defaults:
+  - base_openvla
+
+subset_name: "10"
+data_path_prefix: ""
+data_path: "multi-forward-10/libero_10/"

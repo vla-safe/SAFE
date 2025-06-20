@@ -1,0 +1,15 @@
+defaults:
+  - dataset: openvla
+  - model: indep
+  - train: base_train
+  # See composition order note
+  - _self_
+
+train:
+  exp_name: "${dataset.name}-${dataset.subset_name}-${train.exp_suffix}"
+
+projector: "tsne"
+save_video: False
+video_skip: 5
+save_indiv_frames: False
+custom_cmap: False
