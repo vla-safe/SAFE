@@ -1,6 +1,6 @@
 # SAFE: Multitask Failure Detection for Vision-Language-Action Models
 
-**Preprint**
+**Neural Information Processing Systems (NeurIPS) 2025**
 
 [**Project Page**](https://vla-safe.github.io/) |
 [**Paper**](https://arxiv.org/pdf/2506.09937) |
