@@ -1,0 +1,86 @@
+defaults:
+  - base_pizero_fast_droid
+
+subset_name: "0510"
+
+
+unseen_task_ratio: 0.25
+seen_train_ratio: 0.75
+adjust_sr_min: 0.5
+adjust_sr_max: 0.5
+max_rollouts_per_task: 60
+
+data_path_prefix: "./data/"
+data_path: 
+  - rollouts_all/20250420_rollouts/task0_pick_up_the_lid_and_place_it_on_the_pot/
+  - rollouts_all/20250420_rollouts/task1_pick_up_the_lid_from_the_pot_and_place_it_on_the_table/
+  - rollouts_all/20250420_rollouts/task2_pick_up_the_marker_and_place_it_in_the_cup/
+  - rollouts_all/20250420_rollouts/task3_close_the_door/
+  - rollouts_all/20250420_rollouts/task4_put_the_can_to_the_upright_position/
+  - rollouts_all/20250420_rollouts/task5_pick_up_the_ball_and_place_it_in_the_bowl_01/
+  - rollouts_all/20250420_rollouts/task5_pick_up_the_ball_and_place_it_in_the_bowl_02/
+  - rollouts_all/20250420_rollouts/task6_pick_up_the_knife_and_put_it_on_the_plate/
+  - rollouts_all/20250420_rollouts/task7_put_both_the_carrot_and_the_ball_in_the_bowl/
+  # - rollouts_all/20250420_rollouts/task8_unfold_the_cloth/
+  - rollouts_all/20250420_rollouts/task9_press_the_button/
+  - rollouts_all/20250422_rollouts/20250422_task0_pick_up_the_lid_and_place_it_on_the_pot/
+  - rollouts_all/20250422_rollouts/20250422_task1_pick_up_the_lid_from_pot_and_place_it_on_the_pot/
+  - rollouts_all/20250422_rollouts/20250422_task2_pick_up_the_marker_and_place_it_in_the_cup/
+  - rollouts_all/20250422_rollouts/20250422_task3_close_the_door_01/
+  - rollouts_all/20250422_rollouts/20250422_task3_close_the_door_02/
+  - rollouts_all/20250422_rollouts/20250422_task4_put_the_can_to_the_upright_position_01/
+  - rollouts_all/20250422_rollouts/20250422_task4_put_the_can_to_the_upright_position_02/
+  - rollouts_all/20250422_rollouts/20250422_task5_pick_up_the_ball_and_place_it_in_the_bowl/
+  - rollouts_all/20250422_rollouts/20250422_task6_pick_up_the_knife_and_put_it_on_the_plate/
+  - rollouts_all/20250422_rollouts/20250422_task7_put_both_the_carrot_and_the_ball_in_the_bowl_01/
+  - rollouts_all/20250422_rollouts/20250422_task7_put_both_the_carrot_and_the_ball_in_the_bowl_02/
+  - rollouts_all/20250422_rollouts/20250422_task8_unfold_the_cloth/
+  - rollouts_all/20250422_rollouts/20250422_task9_press_the_button/
+  - rollouts_all/20250429_rollouts/20250429_task0_pick_up_the_lid_and_place_it_on_the_pot/
+  - rollouts_all/20250429_rollouts/20250429_task1_pick_up_the_lid_from_pot_and_place_it_on_the_pot/
+  - rollouts_all/20250429_rollouts/20250429_task2_pick_up_the_marker_and_place_it_in_the_cup/
+  - rollouts_all/20250429_rollouts/20250429_task3_close_the_door/
+  - rollouts_all/20250429_rollouts/20250429_task4_put_the_can_to_the_upright_position/
+  - rollouts_all/20250429_rollouts/20250429_task5_pick_up_the_ball_and_place_it_in_the_bowl_01/
+  - rollouts_all/20250429_rollouts/20250429_task5_pick_up_the_ball_and_place_it_in_the_bowl_02/
+  - rollouts_all/20250429_rollouts/20250429_task6_pick_up_the_knife_and_put_it_on_the_plate/
+  - rollouts_all/20250429_rollouts/20250429_task7_put_both_the_carrot_and_the_ball_in_the_bowl/
+  - rollouts_all/20250429_rollouts/20250429_task8_unfold_the_cloth/
+  - rollouts_all/20250429_rollouts/20250429_task9_press_the_button/
+  - rollouts_all/20250502_rollouts/20250502_task0_pick_up_the_lid_and_place_it_on_the_pot
+  - rollouts_all/20250502_rollouts/20250502_task1_pick_up_the_lid_from_pot_and_place_it_on_the_pot_01
+  - rollouts_all/20250502_rollouts/20250502_task1_pick_up_the_lid_from_pot_and_place_it_on_the_pot_02
+  - rollouts_all/20250502_rollouts/20250502_task2_pick_up_the_marker_and_place_it_in_the_cup
+  - rollouts_all/20250502_rollouts/20250502_task3_close_the_door
+  - rollouts_all/20250502_rollouts/20250502_task4_put_the_can_to_the_upright_position_01
+  - rollouts_all/20250502_rollouts/20250502_task4_put_the_can_to_the_upright_position_02
+  - rollouts_all/20250502_rollouts/20250502_task5_pick_up_the_ball_and_place_it_in_the_bowl_01
+  - rollouts_all/20250502_rollouts/20250502_task6_pick_up_the_knife_and_put_it_on_the_plate
+  - rollouts_all/20250502_rollouts/20250502_task7_put_both_the_carrot_and_the_ball_in_the_bowl
+  - rollouts_all/20250502_rollouts/20250502_task8_unfold_the_cloth
+  - rollouts_all/20250504_rollouts/20250504_task2_pick_up_the_marker_and_place_it_in_the_cup
+  - rollouts_all/20250504_rollouts/20250504_task3_close_the_door
+  - rollouts_all/20250505_rollouts/20250505_task0_pick_up_the_lid_and_place_it_on_the_pot
+  - rollouts_all/20250505_rollouts/20250505_task3_close_the_door
+  - rollouts_all/20250505_rollouts/20250505_task5_pick_up_the_ball_and_place_it_in_the_bowl
+  - rollouts_all/20250505_rollouts/20250505_task6_pick_up_the_knife_and_put_it_on_the_plate
+  - rollouts_all/20250505_rollouts/20250505_task7_put_both_the_carrot_and_the_ball_in_the_bowl
+  - rollouts_all/20250505_rollouts/20250505_task9_press_the_button
+  - rollouts_all/20250509_rollouts/20250509_task10_close_the_drawer_01
+  - rollouts_all/20250509_rollouts/20250509_task10_close_the_drawer_02
+  - rollouts_all/20250509_rollouts/20250509_task10_close_the_drawer_03
+  - rollouts_all/20250509_rollouts/20250509_task10_close_the_drawer_04
+  - rollouts_all/20250509_rollouts/20250509_task11_place_the_green_block_on_the_yellow_block
+  - rollouts_all/20250509_rollouts/20250509_task12_place_the_pink_cup_to_the_right_of_the_blue_cup_01
+  - rollouts_all/20250509_rollouts/20250509_task12_place_the_pink_cup_to_the_right_of_the_blue_cup_02
+  - rollouts_all/20250509_rollouts/20250509_task4_put_the_cup_to_the_upright_position_01
+  - rollouts_all/20250509_rollouts/20250509_task4_put_the_cup_to_the_upright_position_02
+  - rollouts_all/20250509_rollouts/20250509_task4_put_the_cup_to_the_upright_position_03
+  - rollouts_all/20250509_rollouts/20250509_task4_put_the_cup_to_the_upright_position_04
+  - rollouts_all/20250509_rollouts/20250509_task4_put_the_cup_to_the_upright_position_05
+  - rollouts_all/20250509_rollouts/20250509_task4_put_the_cup_to_the_upright_position_06
+  - rollouts_all/20250509_rollouts/20250509_task4_put_the_cup_to_the_upright_position_07
+  - rollouts_all/20250509_rollouts/20250509_task4_put_the_cup_to_the_upright_position_08
+  - rollouts_all/20250510_rollouts/20250510_task10_close_the_drawer
+  - rollouts_all/20250510_rollouts/20250510_task12_place_the_pink_cup_to_the_right_of_the_blue_cup
+  - rollouts_all/20250510_rollouts/20250510_task8_unfold_the_cloth
