@@ -27,6 +27,7 @@ Please follow the following repo for adapted code that runs VLA models on simula
 * [openpi](https://github.com/vla-safe/openpi) for pi0 and pi0-FAST models on the LIBERO benchmark. 
 * [open-pi-zero](https://github.com/vla-safe/open-pi-zero) for pi0* models on the SimplerEnv benchmark. 
 * Collected rollouts by running pi0-FAST model on a Franka robot in our lab can be downloaded from [this link](https://drive.google.com/file/d/13z_cdwnaJota2iHkZbhYgVALujZwtM3b/view?usp=sharing).
+* Collected rollouts by running OpenVLA model on a WidowX robot in our lab can be downloaded from [this link](https://drive.google.com/file/d/1EwaccasZjnlM9L6SEYyWqTd7d6-BR9zp/view?usp=sharing).
 
 After generating the rollouts, please duplicate `setup_envs.bash.template` and edit environment variables inside according to the locations of the generated rollouts.
 
@@ -70,7 +71,8 @@ Please see the following file for training and evaluation scripts for SAFE failu
 * [scripts/batch_training/submit_pi0diff_libero.bash](scripts/batch_training/submit_pi0diff_libero.bash)
 * [scripts/batch_training/submit_pi0fast_libero.bash](scripts/batch_training/submit_pi0fast_libero.bash)
 * [scripts/batch_training/submit_opi0_simpler.bash](scripts/batch_training/submit_opi0_simpler.bash)
-* [scripts/batch_training/submit_pi0fast_droid.bash](scripts/batch_training/submit_pi0fast_droid.bash) (unzip [pi0fast_droid_0510_all.zip](https://drive.google.com/file/d/13z_cdwnaJota2iHkZbhYgVALujZwtM3b/view?usp=sharing) into `./data/` folder, or change configs in [failure_prob/conf/dataset/pizero_fast_droid_0510.yaml](failure_prob/conf/dataset/pizero_fast_droid_0510.yaml). )
+* [scripts/batch_training/submit_pi0fast_droid.bash](scripts/batch_training/submit_pi0fast_droid.bash)
+* [scripts/batch_training/submit_openvla_widowx.bash](scripts/batch_training/submit_openvla_widowx.bash)
 
 
 ### Aggregate and plot metrics 

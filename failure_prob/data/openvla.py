@@ -116,7 +116,12 @@ def load_rollouts(cfg: Config) -> list[Rollout]:
             
             # Process the hidden states
             # (n_step, n_token, d) -> (n_step, d')
-            hidden_states = rollout["hidden_states"].float() # (n_step, n_token, d)
+            hidden_states = rollout["hidden_states"]
+            
+            if isinstance(hidden_states, list):
+                hidden_states = torch.stack(hidden_states, dim=0) # (n_step, n_token, d)
+                
+            hidden_states = hidden_states.float() # (n_step, n_token, d)
             hidden_states = process_tensor_idx_rel(hidden_states, cfg.dataset.token_idx_rel) # (n_step, d')
         else:
             file_name = os.path.basename(csv_path)

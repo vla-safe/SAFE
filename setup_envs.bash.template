@@ -1,6 +1,10 @@
 # Set up the environment variables for this project
 
-export SAFE_OPENVLA_ROLLOUT_ROOT="/path/to/openvla/rollouts"
-export SAFE_OPENPI_ROLLOUT_ROOT="/path/to/openpi/rollouts"
-export SAFE_OPENPIZERO_ROLLOUT_ROOT="/path/to/open-pi-zero/rollouts"
+export SAFE_OPENVLA_ROLLOUT_ROOT="/path/to/openvla/rollouts/"
+export SAFE_OPENPI_ROLLOUT_ROOT="/path/to/openpi/rollouts/"
+export SAFE_OPENPIZERO_ROLLOUT_ROOT="/path/to/open-pi-zero/rollouts/"
+
+export SAFE_OPENPI_DROID_ROLLOUT_ROOT="/path/to/openpi/on/franka/rollouts/"
+export SAFE_OPENVLA_WIDOWX_ROLLOUT_ROOT="/path/to/openvla-widowx/rollouts/"
+
 

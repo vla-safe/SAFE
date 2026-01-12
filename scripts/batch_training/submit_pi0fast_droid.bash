@@ -10,6 +10,7 @@ python -m failure_prob.train \
     --multirun \
     train.wandb_group_name=${GROUP_NAME} \
     dataset=${DATASET} \
+    dataset.data_path_prefix=${SAFE_OPENPI_DROID_ROLLOUT_ROOT} \
     dataset.feat_name=pre_logits \
     dataset.token_idx_rel=mean \
     model=indep,lstm \
@@ -25,6 +26,7 @@ python -m failure_prob.train \
     --multirun \
     train.wandb_group_name=${GROUP_NAME} \
     dataset=${DATASET} \
+    dataset.data_path_prefix=${SAFE_OPENPI_DROID_ROLLOUT_ROOT} \
     dataset.feat_name=pre_logits \
     dataset.token_idx_rel=mean \
     model=embed \
@@ -40,6 +42,7 @@ python -m failure_prob.train \
     --multirun \
     train.wandb_group_name=${GROUP_NAME} \
     dataset=${DATASET} \
+    dataset.data_path_prefix=${SAFE_OPENPI_DROID_ROLLOUT_ROOT} \
     dataset.feat_name=pre_logits \
     dataset.token_idx_rel=mean \
     model=embed \
@@ -54,6 +57,7 @@ python -m failure_prob.train \
     --multirun \
     train.wandb_group_name=${GROUP_NAME} \
     dataset=${DATASET} \
+    dataset.data_path_prefix=${SAFE_OPENPI_DROID_ROLLOUT_ROOT} \
     dataset.feat_name=pre_logits \
     dataset.token_idx_rel=mean \
     model=embed \
@@ -70,6 +74,7 @@ for MODEL in rnd logpzo; do
         --multirun \
         train.wandb_group_name=${GROUP_NAME} \
         dataset=${DATASET} \
+        dataset.data_path_prefix=${SAFE_OPENPI_DROID_ROLLOUT_ROOT} \
         dataset.feat_name=pre_logits \
         dataset.token_idx_rel=mean \
         model=${MODEL} \
@@ -82,6 +87,7 @@ python -m failure_prob.train \
     --multirun \
     train.wandb_group_name=${GROUP_NAME} \
     dataset=${DATASET} \
+    dataset.data_path_prefix=${SAFE_OPENPI_DROID_ROLLOUT_ROOT} \
     train.log_precomputed_only=True \
     train.seed=0-1-2-3-4 \
     train.exp_suffix=13task_handcrafted

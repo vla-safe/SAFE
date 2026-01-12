@@ -1,0 +1,9 @@
+defaults:
+  - base_openvla
+
+subset_name: "widowx"
+data_path_prefix: ""
+data_path: "openvla_widowx/**/"
+
+unseen_task_ratio: 0.25
+seen_train_ratio: 0.66

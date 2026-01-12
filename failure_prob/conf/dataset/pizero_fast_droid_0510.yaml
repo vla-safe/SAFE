@@ -10,7 +10,7 @@ adjust_sr_min: 0.5
 adjust_sr_max: 0.5
 max_rollouts_per_task: 60
 
-data_path_prefix: "./data/"
+data_path_prefix: ""
 data_path: 
   - rollouts_all/20250420_rollouts/task0_pick_up_the_lid_and_place_it_on_the_pot/
   - rollouts_all/20250420_rollouts/task1_pick_up_the_lid_from_the_pot_and_place_it_on_the_table/
