@@ -299,8 +299,8 @@ def main(args: argparse.Namespace):
         exp_name = csv_path.split("/")[-1].split(".")[0]
         print(f"Working on {exp_name}")
 
-        # Compute the ground truth average fail time
-        gt_avg_fail_time = get_avg_fail_time(exp_name, args.use_seed)
+        # # Compute the ground truth average fail time
+        # gt_avg_fail_time = get_avg_fail_time(exp_name, args.use_seed)
         
         df_best = read_aggregated_training_results(csv_path)
         df_best = df_best[df_best['seed'] == args.use_seed]
@@ -410,8 +410,8 @@ def main(args: argparse.Namespace):
             y_name="bal_acc",
         )
 
-        # Plot a vertical line at gt_avg_fail_time
-        plt.axvline(x=gt_avg_fail_time, color='blue', linestyle='--', label="GT Avg Fail Time")
+        # # Plot a vertical line at gt_avg_fail_time
+        # plt.axvline(x=gt_avg_fail_time, color='blue', linestyle='--', label="GT Avg Fail Time")
         
         plt.xlim(0, 0.7)
         ax.set_ylim(bottom=0.45)
