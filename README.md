@@ -53,7 +53,7 @@ conda activate vla-safe
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
 
 # Install other required packages
-pip install pandas scipy pyyaml tqdm imageio[ffmpeg] hydra-core omegaconf scikit-learn opencv_python einops wandb plotly matplotlib natsort flask
+pip install pandas scipy pyyaml tqdm imageio[ffmpeg] hydra-core omegaconf scikit-learn opencv_python einops wandb plotly matplotlib natsort flask ml_dtypes
 
 # Log in your wandb account
 wandb login
