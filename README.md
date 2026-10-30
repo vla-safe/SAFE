@@ -29,7 +29,20 @@ Please follow the following repo for adapted code that runs VLA models on simula
 * Collected rollouts by running pi0-FAST model on a Franka robot in our lab can be downloaded from [this link](https://drive.google.com/file/d/13z_cdwnaJota2iHkZbhYgVALujZwtM3b/view?usp=sharing).
 * Collected rollouts by running OpenVLA model on a WidowX robot in our lab can be downloaded from [this link](https://drive.google.com/file/d/1EwaccasZjnlM9L6SEYyWqTd7d6-BR9zp/view?usp=sharing).
 
-After generating the rollouts, please duplicate `setup_envs.bash.template` and edit environment variables inside according to the locations of the generated rollouts.
+### Download pre-collected simulation rollouts
+
+To reproduce the experiments without generating new rollouts, download the simulation rollout datasets used in our experiments below. These Google Drive links replace the expiring SharePoint links previously shared in [Issue #5](https://github.com/vla-safe/SAFE/issues/5). Each ZIP is shared separately with read-only access for anyone with the link.
+
+| Model | Benchmark | Rollout dataset | ZIP size |
+| --- | --- | --- | --- |
+| OpenVLA | LIBERO | [openvla_libero_rollouts.zip](https://drive.google.com/file/d/1aXKpfexheUDRHQeKBA1CLsI90SZktBqI/view?usp=drivesdk) | 21.17 GB |
+| open-pi-zero (pi0*) | SimplerEnv | [open-pi0_simpler_rollouts.zip](https://drive.google.com/file/d/1jL9KcIDnv3N7-wRYsHLuQsyF53YVhSGD/view?usp=drivesdk) | 59.32 GB |
+| pi0 | LIBERO-10 | [pi0_libero-10_rollouts.zip](https://drive.google.com/file/d/1pL4kFqmYEguXyl0UqXSTHCqiK-rE3wC8/view?usp=drivesdk) | 86.76 GB |
+| pi0-FAST | LIBERO-10 | [pi0fast-libero_10.zip](https://drive.google.com/file/d/1al7rUkUymx9HcT19Htl6-h76Yoy4RsAR/view?usp=drivesdk) | 17.15 GB |
+
+Sizes are for the compressed ZIP files (decimal GB); allow additional disk space for extraction. Download and extract the relevant archive, then configure the rollout paths as described below. Using these datasets avoids differences from newly collected rollouts, but results can still vary with random seeds, package versions, and training/evaluation settings.
+
+After generating or downloading and extracting the rollouts, please duplicate `setup_envs.bash.template` and edit environment variables inside according to the locations of the generated rollouts.
 
 ```bash
 cp setup_envs.bash.template setup_envs.bash
